@@ -1,0 +1,68 @@
+/* Style for the main container */
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Center vertically in the viewport */
+    background-color: #f0f0f0; /* Optional background color for the entire page */
+}
+
+/* Style the game box */
+#game-box {
+    width: 600px;
+    height: 600px;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    background-color: white; /* Optional background color for the game box */
+    margin-top: 20px; /* Space between counters and game box */
+}
+
+/* Style for the heading */
+#heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0; /* Space above and below the heading */
+}
+
+/* Display the counters */
+#counters {
+    margin: 10px 0; /* Space between heading and counters */
+    font-size: 18px;
+    text-align: center; /* Center the text of counters */
+}
+
+/* Style for stone (black dot), paper (grey rectangle), and scissor (red 'X') */
+.item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Stone: Small black dot */
+.stone {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Paper: Small grey rectangle */
+.paper {
+    width: 20px;
+    height: 10px;
+    background-color: grey;
+}
+
+/* Scissors: Red 'X' */
+.scissor {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
